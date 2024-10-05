@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+  width: 100%;
+  height: inherit;
+  color: black;
+  font-family: "Roboto Slab", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url(https://images.unsplash.com/photo-1541580104-94e138c83ca9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: background-slide;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes background-slide {
+  to {
+    background-position: 15% 30%;
+  }
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 12px; 
+}
+
+.auth {
+  width: 30%;
+  padding: 50px 30px 44px;
+  border-radius: 1.25rem;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  border: 2px solid #ebebeb;
+  font-size: 15px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 1.25rem;
+  transition: all 0.375s;
+}
+
+input:hover {
+  border: 2px solid #10449A;
+
+}
+
+button {
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 85%;
+  padding: 0 16px;
+  border-radius: 1.25rem;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: #5b1098;
+  color: #f9f9f9;
+  transition: all 0.375s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #981086;
+}
+
+a {
+  color: #5b1098;
+  font-size: 0.9rem;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 10%;
+  transition: all 0.375s;
+}
+
+a:hover {
+  color: #981086;
+}
